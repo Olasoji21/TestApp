@@ -1,0 +1,26 @@
+﻿@using System.Net.Http
+@using System.Net.Http.Json
+@using Microsoft.AspNetCore.Components.Authorization
+@using Microsoft.AspNetCore.Components.Forms
+@using Microsoft.AspNetCore.Components.Routing
+@using Microsoft.AspNetCore.Components.Web
+@using Microsoft.AspNetCore.Components.Web.Virtualization
+@using Microsoft.AspNetCore.Components.WebAssembly.Http
+@using Microsoft.JSInterop
+@using JenHairousApp.Client
+@using JenHairousApp.Client.Shared
+@using MudBlazor
+@using Microsoft.AspNetCore.Authorization
+@attribute [Authorize]
+
+
+@using JenHairousApp.Client.Shared.Components
+
+@using JenHairousApp.Shared.Services.Products;
+@using JenHairousApp.Shared.Services.Categories
+
+
+@inject IProductService     _productService
+@inject ICategoryService    _categoryService
+@inject IDialogService      _dialogService
+@inject ISnackbar           _snackBar
